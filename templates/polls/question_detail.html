@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ question.text }}</title>
+</head>
+<body>
+<b>Text :</b>{{ question.text }}
+<br>
+<b>
+    publication date:</b>{{ question.pub_date }}
+<a href="{% url 'questions_list' %}">back</a>
+
+</body>
+</html>

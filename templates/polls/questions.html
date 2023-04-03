@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questions</title>
+</head>
+<body>
+<h2>questions list</h2>
+<ul>
+{%  for question in questions %}
+    <li>
+{#        <a href="{% url 'homepage' %}>{{ question.text}}</a>#}
+{#        <a href="/questions/{{question.id}}>{{ question.text}}</a>#}
+        <a href="{% url 'questions_detail' question.id %}">{{ question.text}}</a>
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
